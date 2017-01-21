@@ -79,7 +79,7 @@ namespace UltimateFishBot.Classes.Helpers
 
         public static Rectangle GetWowRectangle()
         {
-            IntPtr Wow = FindWindow("GxWindowClass", "World Of Warcraft");
+            IntPtr Wow = FindWindow("GxWindowClass", "World of Warcraft");
             Rect Win32ApiRect = new Rect();
             GetWindowRect(Wow, ref Win32ApiRect);
             Rectangle myRect = new Rectangle();
@@ -110,7 +110,7 @@ namespace UltimateFishBot.Classes.Helpers
         {
             ActivateApp(Properties.Settings.Default.ProcName);
             ActivateApp(Properties.Settings.Default.ProcName + "-64");
-            ActivateApp("World Of Warcraft");
+            ActivateApp("World of Warcraft");
         }
 
         static public void ActivateApp(string processName)
